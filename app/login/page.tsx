@@ -107,7 +107,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link"; 
-import { Loader2 } from "lucide-react";import { storeUserInfo, signInWithGoogle } from "@/lib/firebase";
+import { Loader2 } from "lucide-react";
+import { storeUserInfo, signInWithGoogle } from "@/lib/firebase";
 import { CreditDialog } from "@/components/credit-dialog";
 
 
