@@ -152,11 +152,8 @@ export default function Login() {
         </CardHeader>
         <CardContent>
             <Button
-              onClick={() => {
-                setShowCredits(true);
-                setTimeout(() => {
-                    setShowCredits(false)
-                    handleGoogleSignInClick();}, 3000);
+              onClick={() => {                 
+                    handleGoogleSignInClick();
               }}
               variant="outline"
               className="w-full"
