@@ -1,0 +1,50 @@
+[debug] [2025-04-13T16:54:20.857Z] ----------------------------------------------------------------------
+[debug] [2025-04-13T16:54:20.861Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/b9a1wqzb1vkh5xd2mrp196csvbgv8j13-firebase-tools-14.0.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-04-13T16:54:20.862Z] CLI Version:   14.0.1
+[debug] [2025-04-13T16:54:20.862Z] Platform:      linux
+[debug] [2025-04-13T16:54:20.862Z] Node Version:  v20.18.1
+[debug] [2025-04-13T16:54:20.863Z] Time:          Sun Apr 13 2025 16:54:20 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-13T16:54:20.863Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-13T16:54:21.469Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-13T16:54:21.470Z] > authorizing via signed-in user (editorialteamghs2@gmail.com)
+[debug] [2025-04-13T16:54:21.470Z] [iam] checking project women-safety-app-f5310 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-13T16:54:21.472Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:21.473Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:21.475Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/women-safety-app-f5310:testIamPermissions [none]
+[debug] [2025-04-13T16:54:21.475Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/women-safety-app-f5310:testIamPermissions x-goog-quota-user=projects/women-safety-app-f5310
+[debug] [2025-04-13T16:54:21.476Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/women-safety-app-f5310:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-13T16:54:22.481Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/women-safety-app-f5310:testIamPermissions 200
+[debug] [2025-04-13T16:54:22.482Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/women-safety-app-f5310:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-13T16:54:22.483Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:22.483Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:22.484Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/women-safety-app-f5310 [none]
+[debug] [2025-04-13T16:54:22.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/women-safety-app-f5310 200
+[debug] [2025-04-13T16:54:22.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/women-safety-app-f5310 {"projectId":"women-safety-app-f5310","projectNumber":"3933440997","displayName":"women safety app","name":"projects/women-safety-app-f5310","resources":{"hostingSite":"women-safety-app-f5310"},"state":"ACTIVE","etag":"1_ddbf1d6f-812c-424c-b971-cb0a51b78437"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-13T16:54:37.467Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:37.468Z] Checked if tokens are valid: true, expires at: 1744565469807
+[debug] [2025-04-13T16:54:37.471Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/women-safety-app-f5310/sites/women-safety-app-f5310 [none]
+[debug] [2025-04-13T16:54:37.794Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/women-safety-app-f5310/sites/women-safety-app-f5310 200
+[debug] [2025-04-13T16:54:37.794Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/women-safety-app-f5310/sites/women-safety-app-f5310 {"name":"projects/women-safety-app-f5310/sites/women-safety-app-f5310","defaultUrl":"https://women-safety-app-f5310.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.3.0
+
+[info]    - Experiments (use with caution):
+     ✓ webpackBuildWorker
+     ✓ parallelServerCompiles
+     ✓ parallelServerBuildTraces
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
