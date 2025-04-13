@@ -43,4 +43,5 @@ const signInWithGoogle = async () => {
 };
 
 // Export the necessary modules
-export { app, auth, db, provider, signInWithGoogle };
+const storeUserInfo = async (user: any) => { console.log("Placeholder storeUserInfo called with user:", user); };
+export { app, auth, db, provider, signInWithGoogle, storeUserInfo };
