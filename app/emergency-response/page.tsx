@@ -21,6 +21,7 @@ import {
 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import dynamic from "next/dynamic"
+import ShakeDetector from "@/shakedector"
 
 // Dynamically import components that use browser APIs with SSR disabled
 const LiveMap = dynamic(() => import("@/components/live-map").then((mod) => mod.LiveMap), {
@@ -158,6 +159,7 @@ export default function EmergencyResponse() {
 
   return (
     <main className="flex min-h-screen flex-col bg-background text-foreground">
+      <ShakeDetector />
       <header className="border-b bg-red-600 text-white">
         <div className="container flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2">
