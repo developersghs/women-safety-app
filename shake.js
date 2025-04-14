@@ -33,7 +33,7 @@ function handleMotion(event) {
         shakeCount = 0;
 
         // You can also add a visual indicator that the SOS has been activated
-        window.location.href = '/emergency-response';
+        window.location.href = 'app/emergency-response/page.tsx';
       }
     }
   }
