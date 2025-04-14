@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Bell, Shield, Phone, Menu, UserIcon as Female, UserIcon as Male, Heart } from "lucide-react"
 import { useSearchParams, useRouter } from "next/navigation"
+import ShakeDetector from "@/shakedector"
 
 // Dynamically import components that use browser APIs with SSR disabled
 const LiveMap = dynamic(() => import("@/components/live-map").then((mod) => mod.LiveMap), {
@@ -135,6 +136,7 @@ export default function Dashboard() {
 
   return (
     <main className={`min-h-screen bg-black ${medicalEmergencyActive ? "border-l-4 border-r-4 border-red-600" : ""}`}>
+      <ShakeDetector />
       <div className="container py-4">
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2">
