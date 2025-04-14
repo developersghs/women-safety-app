@@ -147,7 +147,7 @@ export default function Login() {
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Link>
-          <CardTitle className="text-2xl">Welcome back</CardTitle>
+          <CardTitle className="text-2xl">Welcome</CardTitle>
           <CardDescription>Login to access your SafeGuard account</CardDescription>
         </CardHeader>
         <CardContent>
