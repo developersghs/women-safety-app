@@ -110,6 +110,7 @@ import Link from "next/link";
 import { Loader2 } from "lucide-react";
 import { storeUserInfo, signInWithGoogle } from "@/lib/firebase";
 import { CreditDialog } from "@/components/credit-dialog";
+import { toast } from "sonner";
 
 
 export default function Login() {
@@ -130,7 +131,12 @@ export default function Login() {
       
     } catch (error: any) {
       setGoogleLoginError(`Google sign-in failed: ${error.message}`);
+      toast("Google Sign-in Failed", {
+        description: error.message,
+        action: { label: "Retry", onClick: () => handleGoogleSignInClick() }
+      })
     } finally {
+      console.log('finally');
       setIsLoading(false);
     }
   };

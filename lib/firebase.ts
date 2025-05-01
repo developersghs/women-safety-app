@@ -30,7 +30,7 @@ const signInWithGoogle = async () => {
     // const credential = GoogleAuthProvider.credentialFromResult(result);
     // const token = credential?.accessToken;
     console.log("Google Sign-In successful:", result.user.displayName);
-    return result; // Return the result for potential further handling
+    return result;
   } catch (error: any) {
     console.error("Error during Google Sign-In:", error);
     // Handle specific errors if needed

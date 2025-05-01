@@ -15,7 +15,7 @@ const users = [
     email: "female@example.com",
     password: "password",
     name: "Jane Doe",
-    role: "To be Protected" as const,
+    role: "Protected" as const,
   },
   {
     uid: "user2",
@@ -39,6 +39,7 @@ export async function signIn(email: string, password: string): Promise<User> {
       if (user) {
         // Create a user object without the password
         const { password, ...userWithoutPassword } = user
+        localStorage.setItem('currentUser', JSON.stringify(userWithoutPassword));
         currentUser = userWithoutPassword
         resolve(userWithoutPassword)
       } else {
@@ -60,7 +61,7 @@ export async function signUp(email: string, password: string, name: string, gend
       }
 
       // Create new user
-      const role = gender === "Male" ? "Protector" : "Protected"
+      const role: "Protector" | "Protected" = gender === "Male" ? "Protector" : "Protected"
       const newUser = {
         uid: `user${users.length + 1}`,
         email,
@@ -85,6 +86,7 @@ export async function signOut(): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(() => {
       currentUser = null
+      localStorage.removeItem('currentUser');
       resolve()
     }, 500)
   })
