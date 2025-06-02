@@ -27,10 +27,6 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  exportPathMap: async function (defaultPathMap) {
-    return { ...defaultPathMap, '/': '/', '/login': '/login' };
-  },
-
 }
 
 if (userConfig) {
